@@ -8,9 +8,8 @@
             <span v-else><img :src="book.cover" alt="cover" class="cover"></span>
         </div>
         <div class="col">
-            <div v-if="loading">Sedang memuat gambar.......</div>
-            <div v-else>
-                <h5>Judul : {{ book.judul }}</h5>
+            <div>
+                <h5>{{ book.judul }}</h5>
                 <h6>Kategori : {{ book.kategori.nama }}</h6>
                 <h6>Rak : {{ book.rak.kode }}</h6>
                 <h6>Penulis : {{ book.penulis }}</h6>

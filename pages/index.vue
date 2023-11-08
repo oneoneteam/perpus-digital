@@ -12,8 +12,8 @@
         </div> 
 
         <div class="row">
-            <div v-for="book in books" :key="book.id" class="col-3"> 
-                <div class="card mb-3">
+            <div v-for="book in books" :key="book.id" class="col-2"> 
+                <div class="card">
                   <NuxtLink :to="`/book/${book.id}`">
                     <div class="card-header">
                         <img :src="book.cover" alt="cover" class="cover">
